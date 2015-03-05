@@ -13,7 +13,8 @@ defmodule RomanNumeralsTest do
       {7, "VII"},
       {9, "IX"},
       {10, "X"},
-      {28, "XXVIII"}
+      {28, "XXVIII"},
+      {39, "XXXIX"}
     ]
     Enum.each test_values, fn({arabic, roman}) -> assert RomanNumerals.converts(arabic) == roman end
 
