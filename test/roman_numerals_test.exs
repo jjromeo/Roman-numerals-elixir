@@ -1,11 +1,14 @@
 defmodule RomanNumeralsTest do
   use ExUnit.Case
 
-  test "converts 0" do
-    assert RomanNumerals.converts(0) == ""
-  end
-  
-  test "converts 1" do
-    assert RomanNumerals.converts(1) == "I"
+  test "converts arabic into roman numerals" do
+    test_values = [
+      {0, ""},
+      {1, "I"},
+      {2, "II"},
+      {3, "III"},
+    ]
+    Enum.each test_values, fn({arabic, roman}) -> assert RomanNumerals.converts(arabic) == roman end
+
   end
 end
