@@ -1,5 +1,11 @@
 defmodule RomanNumerals do
 
-  def converts(0), do: ""
+  def converts(number) when number < 1 do
+    ""
+  end
+
+  def converts(number) do 
+    "I"
+  end
 
 end

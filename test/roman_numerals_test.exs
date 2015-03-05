@@ -6,6 +6,6 @@ defmodule RomanNumeralsTest do
   end
   
   test "converts 1" do
-    assert RomanNumerals.converts(0) == "|"
+    assert RomanNumerals.converts(1) == "I"
   end
 end
